@@ -12,26 +12,38 @@ const Portfolio = () => {
     {
       id: 1,
       src: layoutAchive,
+      demo: "https://namdo2469x.github.io/LayoutTwo/",
+      code: "https://github.com/namdo2469x/LayoutTwo",
     },
     {
       id: 2,
       src: layoutContact,
+      demo: "https://namdo2469x.github.io/LayoutFour/",
+      code: "https://github.com/namdo2469x/LayoutFour",
     },
     {
       id: 3,
       src: layoutInfo,
+      demo: "https://namdo2469x.github.io/LayoutThree/",
+      code: "https://github.com/namdo2469x/LayoutThree",
     },
     {
       id: 4,
       src: layoutOne,
+      demo: "https://namdo2469x.github.io/LayoutOnepage/",
+      code: "https://github.com/namdo2469x/LayoutOnepage",
     },
     {
       id: 5,
       src: layoutPhoto,
+      demo: "https://namdo2469x.github.io/LayoutPhotobook/",
+      code: "https://github.com/namdo2469x/LayoutPhotobook",
     },
     {
       id: 6,
       src: layoutPic,
+      demo: "https://namdo2469x.github.io/LayoutOne/",
+      code: "https://github.com/namdo2469x/LayoutOne",
     },
   ]
 
@@ -57,12 +69,22 @@ const Portfolio = () => {
                 className="rounded-md duration-200 hover:scale-105"
               />
               <div className="flex items-center justify-center">
-                <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
+                <a
+                  href={port.demo}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105"
+                >
                   Demo
-                </button>
-                <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
+                </a>
+                <a
+                  href={port.code}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105"
+                >
                   Code
-                </button>
+                </a>
               </div>
             </div>
           ))}
